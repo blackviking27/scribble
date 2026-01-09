@@ -29,12 +29,12 @@ export const rules: Required<ModuleOptions>["rules"] = [
     },
   },
   {
-    test: /\.tsx?$/,
+    test: /\.(ts|tsx|js|jsx)$/,
     use: {
       loader: "babel-loader",
       options: {
         exclude: /node_modules/,
-        presets: ["@babel/preset-react"],
+        presets: ["@babel/preset-react", "@babel/preset-typescript"],
       },
     },
   },
