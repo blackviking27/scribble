@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { Main } from "./components/main";
 
-const root = createRoot(document.body);
-root.render(<h2>Hello from React!</h2>);
+const root = createRoot(document.getElementById("root"));
+root.render(<Main />);
